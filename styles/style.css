@@ -1,0 +1,92 @@
+/*reset defualts */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5em;
+    transition: 0.5s;
+}
+
+.cell:active {
+    transition: 0.25s;
+}
+
+.cell:hover,
+on {
+    transform: scale(1.05);
+}
+
+.cell:nth-child(1) {
+    background-color: #2ed573;
+}
+
+.cell:nth-child(1):active {
+    background-color: #7bed9f;
+}
+
+.cell:nth-child(2) {
+    background-color: #1e90ff;
+}
+
+.cell:nth-child(2):active {
+    background-color: #70a1ff;
+}
+
+.cell:nth-child(3) {
+    background-color: #ff6348;
+}
+
+.cell:nth-child(3):active {
+    background-color: #ff7f50;
+}
+
+.cell:nth-child(4) {
+    background-color: #ff4757;
+}
+
+.cell:nth-child(4):active {
+    background-color: #ff6b81;
+}
+
+button {
+    background-color: #ffa502;
+    color: #fff;
+    padding: 1em;
+    transition: 0.5s;
+
+}
+
+button:hover {
+    background-color: #eccc68;
+}
